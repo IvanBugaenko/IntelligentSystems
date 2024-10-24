@@ -1,0 +1,11 @@
+Game can control Meteor, MineTrap;
+Player can control SpaceShip, ControlledJet;
+Game can order Game StartGame, StopGame;
+Game can order Meteor SpawnOnField;
+Game can order MineTrap SpawnOnField;
+Player can order SpaceShip StartMove, StopMove, Shoot;
+Player can order ControlledJet StartMove, StopMove, Shoot, DestroyMineTrap;
+StartMove include StartCommand, Move;
+Move include MoveCommand, BurnFuelCommand, CheckCollisionCommand;
+BurnFuelCommand next to MoveCommand;
+CheckCollisionCommand next to BurnCommand;
