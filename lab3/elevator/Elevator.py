@@ -6,9 +6,6 @@ class Elevator:
     def get_current_floor(self) -> int:
         return self._current_floor
     
-    def get_inner_state(self) -> int:
-        return self._current_floor
-    
     def up(self) -> None:
         self._current_floor += 1
         print(f'Лифт #{self._elevator_id} поднялся на этаж {self._current_floor}')
