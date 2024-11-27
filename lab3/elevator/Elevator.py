@@ -21,6 +21,5 @@ class Elevator:
         print(f'Лифт #{self._elevator_id} закрыл дверь')
         
     def wait(self) -> None:
-        self._inner_state = 2
         self.__open_door()
         self.__close_door()
